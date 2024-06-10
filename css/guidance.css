@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+/* WRAPPER */
+.guidance--wrapper {
+  width: 100%;
+  padding: 10%;
+}
+.guidance--wrapper h2 {
+  margin-bottom: 5%;
+}
+
+.guidance--wrapper dl {
+  margin-bottom: 5%;
+}
+
+.guidance--wrapper dt {
+  margin-bottom: 2%;
+}
+

@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+}
+
+:root {
+  --fontColor: #333;
+  --accentColor: #fe5656;
+  --baseColor: #f3c5b7;
+  --minColumGap: 0.5%;
+  --minLowGap: 5%;
+  --spColumGap: 5%;
+  --spRowGap: 5%
+}
+
+html {
+  background-color: var(--baseColor);
+  width: 100vw;
+
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.9rem, 1.1vw, 1.2rem);
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* HEADERセクション */
+header {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  /* background-color: var(--baseColor); */
+}
+.header .logo {
+  width: 22%;
+  background-image: url(../img/323marche_textlogo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .upper {
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  box-shadow: 0 2px 10px -5px #333333b1;
+  /* border-bottom: 2px solid #555; */
+}
+.header .users {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.guide-search-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.sp-header {
+  display: none;
+}
+
+.user {
+  width: 100%;
+  height: 6vh;
+  /* background-color: #b37373; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 3%;
+}
+.user a {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.guide {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+}
+.guide ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: #f1ff57; */
+}
+.guide ul a {
+  margin-left: 5%;
+}
+.guide ul li {
+  text-wrap: nowrap;
+  padding: 2px;
+}
+
+/* MENU */
+.menu {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  align-items: end;
+  /* background-color: #9fd0ff; */
+}
+
+.menu-list {
+  width: 100%;
+}
+.menu .menu-list ul {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.menu .menu-list li {
+  width: fit-content;
+  padding-left: 1%;
+  padding-right: 3%;
+  font-size: 0.9rem;
+  text-wrap: nowrap;
+  border-right: 1px solid #333333bd;
+  border-radius: 3px;
+  box-shadow: 2px -1px 3px #33333390;
+}
+.menu .menu-list ul a {
+  display: block;
+  width: fit-content;
+  margin-left: 2%;
+}
+
+.menu .menu-list ul a:first-child {
+  margin-left: 0;
+}
+.search {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #e96c6c; */
+}
+#sort, input {
+  padding: 5px;
+}
+select {
+  outline: none;
+  border:2px solid var(--baseColor);
+  border-radius: 3px;
+}
+input {
+  margin-left: var(--minColumGap);
+  outline: none;
+  border:2px solid var(--baseColor);
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px #333 inset;
+}
+.search-button {
+  width: 25px;
+  height: 25px;
+  margin-left: var(--minColumGap);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* HeaderHeroセクション */
+.sub-hero {
+  width: 100%;
+  height: 70vh;
+  background-color: #000;
+  background-image: url(../img/heros/guidance.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.sub-hero .hero-text {
+  transform: translateX(20%);
+}
+.sub-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.sub-hero h1, .sub-hero h2 {
+  mix-blend-mode:color-burn;
+}
+
+
+
+/* FOOTERセクション */
+footer {
+  width: 100%;
+  padding: 5%;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.footer .marche {
+  line-height: 2.3;
+}
+.footer .footer-logo {
+  width: 25%;
+}
+.footer .for {
+  font-size: 0.8rem;
+}
+.footer .instagram {
+  width: 10%;
+  transform: translateY(20%);
+}
+
+.footer .guidance {
+  line-height: 1.7;
+}
+.guidance a {
+  display: block;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 90px;
+}

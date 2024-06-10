@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>323 Select</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/common_sp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  
+  <header>
+    <article class="header">
+      <div class="upper">
+        <a href="index.html" class="logo"></a>
+        <div class="users">
+          <section class="user">
+            <p>ゲストさま</p>
+            <a href="login.html">ログイン</a>
+            <a href="signup.html">ユーザー登録</a>
+          </section>
+
+          <div class="guide-search-wrap">
+            <section class="guide">
+              <ul>
+                <a href="guidance.html"><li>ご利用ガイド</li></a>
+                <a href="recommendation.html"><li>おすすめ</li></a>
+                <a href="event.html"></a><li>イベント</li>
+              </ul>
+            </section>
+
+            <section class="search">
+              <div class="category">
+                <select name="sort" id="sort">
+                  <option value="food">フード・スイーツ</option>
+                  <option value="interior">インテリア・雑貨</option>
+                  <option value="fashion">ファッション</option>
+                  <option value="cosmetics">コスメ・アクセサリー</option>
+                  <option value="workshop">ワークショップ</option>
+                  <option value="healing">体験・癒し</option>
+                  <option value="others">その他</option>
+                </select>
+              </div>
+              <input type="text">
+              <button class="search-button">
+                <span class="material-symbols-outlined">
+                  search
+                </span>
+              </button>
+            </section>
+          </div>
+        </div>
+      </div>
+      
+      <section class="menu">
+        <div class="menu-list">
+          <ul>
+            <li><a href="food">フード・スイーツ</a></li>
+            <li><a href="interior">インテリア・雑貨</a></li>
+            <li><a href="fashion">ファッション</a></li>
+            <li><a href="cosmetics">コスメ・アクセサリー</a></li>
+            <li><a href="workshop">ワークショップ</a></li>
+            <li><a href="healing">体験・癒し</a></li>
+            <li><a href="others">その他</a></li>
+          </ul>
+        </div>
+      </section>
+    </article>
+
+    <!-- spヘッダー -->
+    <article class="sp-header">
+      <div class="bg-img"></div>
+      <!-- <div class="toggle">
+        <span class="material-symbols-outlined">
+        menu
+        </span>
+      </div>
+      <div class="toggle">
+        <span class="material-symbols-outlined">
+        close
+        </span>
+      </div>
+      <div class="logo"><img src="img/323marche_textlogo.png" alt=""></div> -->
+
+      <section class="sp-user">
+        <p>ゲストさま</p>
+        <div class="member">
+          <a href="./log/login.html">ログイン</a>
+          <a href="./log/signup.html">ユーザー登録</a>
+        </div>
+      </section>
+
+      <section class="sp-search">
+        <div class="category">
+          <select name="sort" id="sort">
+            <option value="food">フード・スイーツ</option>
+            <option value="interior">インテリア・雑貨</option>
+            <option value="fashion">ファッション</option>
+            <option value="cosmetics">コスメ・アクセサリー</option>
+            <option value="workshop">ワークショップ</option>
+            <option value="healing">体験・癒し</option>
+            <option value="others">その他</option>
+          </select>
+        </div>
+        <input type="text">
+        <button class="search-button">
+          <span class="material-symbols-outlined">
+          search
+          </span>
+        </button>
+      </section>
+
+      <section class="select">
+        <ul class="top-selection">
+          <li>アイテムをみる</li>
+          <li>ショップをみる</li>
+          <li>イベントをみる</li>
+        </ul>
+        <h3>323 Infomation</h3>
+        <ul class="top-information">
+          <li>コーディネート</li>
+          <li>新着ショップ情報</li>
+          <li>新着セール情報</li>
+        </ul>
+      </section>
+    </article>
+  </header>
+
+  <main>
+      <!-- HeaderHeroセクション -->
+      <section class="sub-hero">
+        <h1 class="hero-message1">Guidance</h1>
+        <h2 class="hero-message2">Terms and Conditions.</h2>
+        </div>
+      </section>
+
+  </main>
+
+  <footer>
+    <section class="footer">
+      <div class="marche">
+        <h2>323marcheについて</h2>
+        <a href="323marche/shops.html">Shop一覧</a>
+        <a href="https://www.instagram.com/323marche" target="blank" rel="noopener noreferrer">
+          <p>323マルシェのSNS
+            <span class="material-symbols-outlined for">
+            arrow_forward_ios
+            </span>
+            <img src="img/icon/instagram-logo-24.png" alt="" class="instagram">
+          </p>
+        </a>
+        <a href="contact.html" class="contact"><p>お問合せ</p></a>
+      </div>
+      <div class="footer-logo">
+        <a href="index.html"><img src="img/323Marchelogo.png" alt="" class="logo"></a>
+      </div>
+      <div class="guidance">
+        <a href="guidance.html"><h2>ご案内</h2></a>
+        <a href="guidance.html#gui1">商品のお取り扱い方法</a>
+        <a href="guidance.html#gui2">返品・再注文について</a>
+        <a href="guidance.html#gui3">返金・返品及びキャンセルポリシー</a>
+        <a href="guidance.html#gui4">個人情報の取り扱いに関する同意条項</a>
+        <a href="guidance.html#gui5">Cookieポリシー</a>
+        <a href="guidance.html#gui6">特定商取引に関する法律に基づく表示</a>
+        <a href="guidance.html#gui7">古物営業法に基づく表示</a>
+      </div>
+    </section>
+
+    <p class="copyright"><small>©323Marche</small></p>
+  </footer>
+</body>
+</html>
