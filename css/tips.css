@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+}
+
+/* hero */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #929292;
+  text-align: center;
+  padding-block: clamp(8rem, 25vh, 1vw);
+}
+.hero h1 {
+  font-size: 5rem;
+  line-height: 2.5;
+}
+.hero p {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  max-width: 55ch;
+  margin-inline: auto;
+}
+.hero > * {
+  transform: translate(-100%, 80%);
+  animation: hero linear forwards;
+  animation-timeline: view();
+  animation-range-start: contain 60vh;/* アニメーション始まり */
+  animation-range-end: contain 70vh;/* アニメーション終わり */
+}
+
+@keyframes hero {
+  to {
+    transform: translate(0, 50%);
+  }
+}
+
+
+/* scroll-reveal */
+
+.scroll-reveal {
+  width: 100%;
+  text-align: center;
+  padding-block: clamp(8rem, 25vh, 0.8vw);
+  background-color: #000;
+}
+.scroll-reveal h2 {
+  font-size: 5rem;
+  line-height: 2;
+}
+.scroll-reveal p {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  max-width: 80%;
+  margin-inline: auto;
+}
+.scroll-reveal .second {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  max-width: 55ch;
+  
+  display: inline;/* inlineとblockで変化する HTML内でspanでwrapでもnice */
+}
+.scroll-reveal > * {
+  margin: 0;
+  color: hsl(0 0% 100% / 0);/* 初期状態の不当明度の調整をする */
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(90deg, red, blue);
+  animation: scroll-reveal linear forwards;
+  animation-timeline: view(y);
+  animation-range-start: contain 20vh;/* アニメーション始まり */
+  animation-range-end: contain 40vh;/* アニメーション終わり */
+}
+
+@keyframes scroll-reveal {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+.feature-grid {
+  
+}
