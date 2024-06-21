@@ -52,7 +52,8 @@ header {
   /* background-color: var(--baseColor); */
 }
 .header .logo {
-  width: 20%;
+  display: block;
+  width: 18%;
   background-image: url(../img/323marche_textlogo.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -205,31 +206,22 @@ input {
   background-attachment: fixed;
 }
 .sub-hero .hero-text {
-  transform: translateX(15%);
+  width: fit-content;
 }
 .sub-hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
   font-weight: bold;
-  position: relative;
+  text-shadow: 2px 2px #fff;
 }
 .sub-hero h2 {
   font-size: 1.5rem;
   color: var(--accentColor);
-  position: relative;
-}
-.sub-hero h1::before, .sub-hero h2::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-  transform: translate(1%, 1%);
-  z-index: -10;
+  text-shadow: 2px 2px #fff;
 }
 
 .sub-hero h1, .sub-hero h2 {
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 
@@ -271,4 +263,21 @@ footer {
   font-size: 14px;
   font-weight: bold;
   margin-top: 90px;
+}
+
+@media screen and (max-width: 720px) {
+
+  body {
+    font-size: 1.2rem;
+  }
+  .sub-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .sub-hero {
+    background-position: right;
+    align-items: center;
+  }
+  
+
 }

@@ -3,7 +3,16 @@
 /* HERO Basicはcommon.css */
 .sub-hero {
     background-image: url(../img/heros/indexHeader2.png);
-  }
+}
+/* fadeセレクター */
+.fade {
+	opacity: 0;
+	transform: translateY(30%);
+	transition: opacity 1.5s, transform 1.5s;
+}.fade.active {
+	opacity: 1;
+	transform: translateY(0px);
+}
 
   /* About Us */
 .about {
@@ -21,30 +30,28 @@
 }
 .about-text h2 {
   font-size: 1.7rem;
-  position: relative;
   margin-bottom: 5%;
-}
-.about-text h2::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-  transform: translate(15%, 15%);
-  z-index: -1;
+  text-shadow: 2px 2px #fff;
 }
 .about .lead p {
   line-height: 2;
 }
+
 .about .image {
-  width: 60%;
+  width: 50%;
   aspect-ratio: 1.5;
   background : transparent url(../img/assets/kansha.png) no-repeat center / cover;
-  transform: rotate(345deg) translateY(100px);
+  margin-top: 15%;
+  transform: rotate(-15deg);
 }
-.about .image-text {
-  transform: translate(-20%, 400%);
+.image-text {
+  margin-top: 5%;
+  transform: translateX(-25%);
 }
+.image-text2 {
+  text-align: center;
+}
+
 
 /* お知らせ */
 .notice {
@@ -63,7 +70,7 @@
   justify-content: space-around;
   position: relative;
 }
-.card {
+.card-wrapper .card {
   width: 30%;
   margin-bottom: 5%;
 }
@@ -74,7 +81,7 @@
 
 .notice .image1 {
   position: absolute;
-  width: 30%;
+  width: 25%;
   aspect-ratio: 2;
   background : transparent url(../img/assets/summer_text.png) no-repeat center / cover;
   transform: rotate(345deg) translateY(100px);
@@ -82,7 +89,7 @@
 }
 .notice .image2 {
   position: absolute;
-  width: 43%;
+  width: 38%;
   aspect-ratio: 3;
   background : transparent url(../img/assets/marche!!.png) no-repeat center / cover;
   transform: rotate(345deg) translateY(200px);
@@ -93,4 +100,343 @@
   text-align: center;
 }
 
+
+/* Sliderセクション */
+.slider {
+  width: 80%;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+  /* background-color: #c28787; */
+}
+.slider-text {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.shops-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  background-color: #fefefe;
+}
+
+.shops-container .container {
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* background-color: #fb9f9f; */
+  transform: translate(-50%, -50%);
+}
+.slider-section {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+}
+.slides {
+  display: flex;
+  overflow-x: auto; /* 横スクロールを有効にする */
+  scroll-snap-type: x mandatory; /* 横スクロールでスナップするようにする */
+}
+.scrollbar_hidden {
+  -ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.scrollbar_hidden::-webkit-scrollbar {
+  display: none;
+}
+.slides img {
+  object-fit: cover;
+  aspect-ratio: 2.2;
+  object-position: center;
+  flex: 0 0 auto;
+  width: 100%; /* スライダーの幅に合わせる */
+  height: auto;
+  scroll-snap-align: start; /* スナップ位置を画像の先頭に設定 */
+}
+
+.button-container {
+  width: 100%;
+  text-align: center;
+}
+.button-container button {
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--accentColor);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+.button-container button:hover {
+  color: #333;
+}
+
+.button-area {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.prev, .next {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  font-size: 1.5rem;
+}
+
+
+/* WRAPPER */
+.gallery {
+  width: 100%;
+  padding-top: 5%;
+}
+.gallery-text {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
+.gallery .grid-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+}
+.tap {
+  width: fit-content;
+  font-size: 1rem;
+  position: sticky;
+  bottom: 10%;
+  left: 5%;
+  padding: 1.5%;
+  line-height: 2;
+  background-color: #ffffff76;
+  color: var(--accentColor);
+  z-index: 10;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.gallery button {
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+.gallery .card {
+  width: 20%;
+  margin: 5% 3%;
+}
+.gallery .card a {
+  display: block;
+}
+.gallery .card-title {
+  color: var(--fontColor);
+}
+
+
+.card-open-wrapper {
+  width: 80%;
+  height: 65vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 3px #3333339d;
+  background-color: #c4c4c44b;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  display: none;
+}
+.card-open-wrapper.active {
+  display: flex;
+  transition: all 0.8s;
+}
+.card-open-wrapper button {
+  background-color: transparent;
+  border: none;
+}
+.wrap-img {
+  width: 50%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.card-open {
+  width: 40%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card-open .close {
+  position: absolute;
+  top: 15%;
+  right: 3%;
+  width: 3%;
+  transform: translateY(-100%);
+}
+.card-open h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+.card-open p {
+  font-size: 1.1rem;
+  margin-bottom: 10%;
+}
+.card-open .insta {
+  width: 30%;
+}
+
+
+/* .card .description {
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff88;
+  text-align: start;
+  padding: 5%;;
+  font-size: 1.3em;
+  display: none;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  z-index: 10;
+}
+.gallery .card .description p {
+  margin: 5% auto;
+}
+.gallery .card .description .site {
+  margin: 0 auto;
+}
+.gallery .card .description img {
+  width: 20%;
+}
+.card .description .close {
+  width: 10%;
+  cursor: pointer;
+}
+
+.card .description.active {
+  display: block;
+  opacity: 1;
+} */
+
+
+
+
+@media screen and (max-width: 720px) {
+
+  .about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .image {
+    width: 70%;
+    margin-top: 30%;
+  }
+  .image-text {
+    width: 100%;
+    margin-top: 5%;
+    transform: translateX(-0%);
+    text-wrap: nowrap;
+  }
+  .about-text h2 {
+    font-size: 1.7rem;
+    margin-bottom: 5%;
+    text-shadow: 2px 2px #fff;
+  }
+  .about .lead p {
+    font-size: 0.9rem;
+    line-height: 2;
+  }
   
+
+  .card-wrapper .card {
+    width: 40%;
+  }
+  .card-wrapper figcaption {
+    font-size: 0.9rem;
+  }
+  
+  
+
+  .hero {
+    height: 40vh;
+  }
+  .shops-container {
+    height: 50%;
+  }
+  
+  .shops-container .container {
+    justify-content: flex-end;
+  }
+
+  .notice .image1 {
+    width: 45%;
+  }
+  .notice .image2 {
+    width: 60%;
+  }
+  
+    
+  .gallery .card {
+    width: 40%;
+    margin: 5% auto;
+  }
+  
+  .card-open-wrapper {
+    height: fit-content;
+    flex-direction: column;
+  }
+  
+  .wrap-img {
+    width: 100%;
+  }
+  .card-open {
+    width: 100%;
+  }
+  .card-open .close {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 10%;
+    height: 50%;
+    z-index: 20;
+    justify-content: end;
+  }
+  
+  
+}
+
