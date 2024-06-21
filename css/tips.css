@@ -27,11 +27,17 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
+  background-image: url(../img/pawel-czerwinski-3k9PGKWt7ik-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .hero h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   line-height: 2.5;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 1px 1px #fff,3px 3px #42fcd3, 5px 5px #ff6a6a;
   transform: scale(100%);
   animation: hero linear forwards;
   animation-timeline: view(block 10% 50%);
@@ -39,11 +45,12 @@ img {
   animation-range-start: contain 20vh; 
   animation-range-end: contain 20vh; 
   の記述でもOK！ */
+  mix-blend-mode: difference;
 }
 .hero p {
   font-size: 1.75rem;
   line-height: 1.3;
-  max-width: 55ch;
+  text-shadow: 1px 1px #fff,3px 3px #42fcd3, 5px 5px #ff6a6a;
   margin-inline: auto;
   transform: scale(100%);
   animation: hero linear forwards;
@@ -63,35 +70,29 @@ img {
   width: 100%;
   height: 100vh;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding: 5% 10%;
   background-color: #000;
+  position: relative;
 }
 .scroll-reveal h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 2;
   animation: scroll-reveal linear forwards;
-  animation-timeline: view(y);
-  animation-range-start: contain 20vh;/* アニメーション始まり */
-  animation-range-end: contain 40vh;/* アニメーション終わり */
+  animation-timeline: view();
 }
-.scroll-reveal p {
-  font-size: 1.75rem;
-  line-height: 1.3;
-  max-width: 80%;
+.scroll-reveal span {
+  font-size: 1.2rem;
+  line-height: 1.5;
   margin-inline: auto;
   animation: scroll-reveal linear forwards;
-  animation-timeline: view(y);
-  animation-range-start: contain 20vh;/* アニメーション始まり */
-  animation-range-end: contain 40vh;/* アニメーション終わり */
+  animation-timeline: view();
 }
-.scroll-reveal .second {
-  display: inline;
+.scroll-reveal p {
+  font-size: 1.3rem;
   animation: scroll-reveal linear forwards;
-  animation-timeline: view(y);
-  animation-range-start: contain 20vh;/* アニメーション始まり */
+  animation-timeline: view();
+  animation-range-start: contain 10vh;/* アニメーション始まり */
   animation-range-end: contain 40vh;/* アニメーション終わり */
 }
 .scroll-reveal > * {
@@ -100,7 +101,7 @@ img {
   background-clip: text;
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  background-image: linear-gradient(90deg, red, blue);
+  background-image: linear-gradient(115deg, red, blue);
 }
 
 @keyframes scroll-reveal {
@@ -109,6 +110,51 @@ img {
   }
 }
 
-.feature-grid {
+.text-clip {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5% 10%;
+  background-color: #eaee10;
+  position: relative;
+  background-image: url(../img/robot-8815014_1280.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
+.text-clip h2 {
+  margin: 0;
+  color: transparent;/* 初期状態の不当明度の調整をする */
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-image: url(../img/pawel-czerwinski-3k9PGKWt7ik-unsplash.jpg);
+}
+
+.text-clip h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 8rem;
+  line-height: 2;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #e74a86;
+}
+
+.text-clip .open-box {
+  width: 50%;
+  height: 40vh;
+  inset: 0 0;
+  border: 3px solid #fff;
+  padding: 5%;
+  background-color: #ffffff41;
+  backdrop-filter: blur(15px);
+  text-transform: uppercase;
+}
+.open-box h3 {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  mix-blend-mode: overlay;
 }
