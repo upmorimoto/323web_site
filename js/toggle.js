@@ -1,19 +1,18 @@
 // Clickイベント
-window.addEventListener('load', function () {
-  const $button = document.querySelector('.toggle');
-  const $menu = document.querySelector('.menu-list');
-  $button.addEventListener('click', () => {
-      if ($menu.classList.contains('show')) {
-          $menu.classList.remove('show');
-          $button.classList.remove('show');
-      }
-      else {
-          $menu.classList.add('show');
-          $button.classList.add('show');
-      }
-      
-  });
-});
+  // ページの読み込みが完了したときにスクリプトを実行
+  document.addEventListener('DOMContentLoaded', function() {
+    // menuボタンのクリックイベント
+    document.querySelector('.toggle .menu').addEventListener('click', function() {
+      // sp-header要素にactiveクラスを追加する
+      document.querySelector('.sp-header').classList.add('active');
+    });
+
+    // closeボタンのクリックイベント
+    document.querySelector('.toggle .close').addEventListener('click', function() {
+      // sp-header要素からactiveクラスを削除する
+      document.querySelector('.sp-header').classList.remove('active');
+    });
+  });  
 
 // Smooth scroll 
 const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');

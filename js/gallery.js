@@ -4,185 +4,151 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const cardDataList = [
         // 複数イメージSumple
-    // {
-    //   id: 0,
-    //   title: '',
-    //   img: 'img/',
-    //   description: '',
-    //   link: 'https://www.instagram.com/wafuka0514/?igsh=bGNhN2Fxa2R1dXA2',
-    //   imgSrcs: ['img/', 'img/', 'img/']
-    // },
-
-      // 複数のカードデータのリスト
-        {
-      id: 2,
-      title: 'ippo＆逸穂',
-      img: 'img/ippo.jpg',
-      description: '妖精が宿るヒンメリと藁書の販売します。ヒンメリか藁書ワークショップ致します。<br>どちらかは当日のお楽しみに😊体験1,000円です。',
-      link: 'https://www.instagram.com/ippo_7oco/?igsh=MWQ1a3liaWU4bmJwbA%3D%3D&utm_source=qr',
-      imgSrcs: ['img/ippo2.jpg', 'img/ippo.jpg']
-    },
-
-    // {
-    //   id: 2,
-    //   imgSrc: 'img/ippo.jpg',
-    //   closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-    //   title: 'ippo',
-    //   description: '暮らしの動線づくりをしながら癒しのグッズを販売！お掃除グッズ／ヒンメリ／藁書の販売。藁書体験（うちわ仕上げ）1,000円',
-    //   link: 'https://www.instagram.com/ippo_7oco/?igsh=MWQ1a3liaWU4bmJwbA%3D%3D&utm_source=qr',
-    //   instaImgSrc: 'img/icon/another-logo.png'
-    // },
     {
-      id: 3,
-      imgSrc: 'img/souju714.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: '颯樹~soujyu~',
-      description: 'ハンドメイドアクセサリー、天然石、雑貨、プリザーブドフラワー、販売ワークショップ幸せのお手伝いが出来ますようにあなただけの1点を探してください',
-      link: 'https://www.instagram.com/soujyu_3/?igsh=eXZlenFob2pub2Qz',
-      instaImgSrc: 'img/icon/another-logo.png'
-    },
-    {
-      id: 4,
-      imgSrc: 'img/cosmespace714.2.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'コスメスペース',
-      description: 'これからの季節におすすめのスキンケアやコスメをご紹介♪お肌診断やポイントメイク、ハンドマッサージなど楽しいコーナーもございます!ミニサンプルプレゼント♪',
-      link: '',
-      instaImgSrc: 'img/icon/another-logo.png'
-    },
-    {
-      id: 5,
-      imgSrc: 'img/reisuigaku2.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: ' 令翠学鑑定士 白明光令翠(ﾚｲｽｲｶﾞｸｶﾝﾃｲｼ ﾊｸﾒｲｺｳﾚｲｽｲ)',
-      description: '令翠学ワンポイント鑑定　20分　2000円',
-      link: 'https://www.instagram.com/hakumeikoreisui?igsh=bTd5Z3V1MG5wNHhj&utm_source=qr',
-      instaImgSrc: 'img/icon/another-logo.png'
-    },
-    {
-      id: 6,
-      imgSrc: 'img/megumiya.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'めぐみや',
-      description: '手作り雑貨を販売します',
-      link: '',
-      instaImgSrc: 'img/icon/another-logo.png'
-    },
-    {
-      id: 7,
-      imgSrc: 'img/hanamizuki1.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'はなみずき',
-      description: '困っていることはありませんか？どうすれば良いのかお話を聞きながら一緒に悩み事を解決できるようお手伝いします。料金20分¥2,000延長10分¥1,000',
-      link: 'https://www.instagram.com/mibyoshidan_yosshi/?igsh=dDVnNGR6bWhwcHRj',
-      instaImgSrc: 'img/icon/another-logo.png'
-    },
-    {
-      id: 8,
-      imgSrc: 'img/Manacapua3.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'Manacapua',
-      description: 'インナーチャイルドセラピー。気づくことのなかった自分の本当の気持ちを知って自分の力で海運していこう。20分3枚引き2,000円／30分6枚引き3,000円',
-      link: 'https://www.instagram.com/manacapua.kirara/?igsh=MW1lM2VuZzE4ZHNvYg%3D%3D',
-      instaImgSrc: 'img/icon/another-logo.png'
-    },
-    {
-      id: 9,
+      id: 0,
       title: '',
       img: 'img/',
       description: '',
       link: 'https://www.instagram.com/wafuka0514/?igsh=bGNhN2Fxa2R1dXA2',
       imgSrcs: ['img/', 'img/', 'img/']
     },
+
+      // 複数のカードデータのリスト
+        {
+      id: 2,
+      title: 'ippo＆逸穂',
+      img: 'img/ippo.jpg',
+      description: '妖精が宿るヒンメリと藁書の販売します。<br>藁書体験うちわ仕上げ😊体験1,000円です。',
+      link: 'https://www.instagram.com/ippo_7oco/?igsh=MWQ1a3liaWU4bmJwbA%3D%3D&utm_source=qr',
+      imgSrcs: ['img/ippo2.jpg','img/ippo.jpg', 'img/ippo3.jpg', 'img/ippo4.jpg']
+    },
+    {
+      id: 3,
+      title: '颯樹~soujyu~',
+      img: 'img/souju714.jpg',
+      description: 'ハンドメイドアクセサリー、天然石、雑貨、プリザーブドフラワー、販売ワークショップ幸せのお手伝いが出来ますように。<br>あなただけの1点を探してください',
+      link: 'https://www.instagram.com/soujyu_3/?igsh=eXZlenFob2pub2Qz',
+      imgSrcs: ['img/souju714.jpg']
+    },
+    {
+      id: 4,
+      title: 'コスメスペース',
+      img: 'img/cosmespace714.2.jpg',
+      description: 'これからの季節におすすめのスキンケアやコスメをご紹介♪<br>お肌診断やポイントメイク、ハンドマッサージなど楽しいコーナーもございます!ミニサンプルプレゼント♪',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/cosmespace714.2.jpg', 'img/cosmespace714.3.jpg', 'img/cosmespace714.2.jpg']
+    },
+    {
+      id: 5,
+      title: '令翠学鑑定士 白明光令翠(ﾚｲｽｲｶﾞｸｶﾝﾃｲｼ ﾊｸﾒｲｺｳﾚｲｽｲ)',
+      img: 'img/reisuigaku2.jpg',
+      description: '令翠学ワンポイント鑑定　20分　2000円',
+      link: 'https://www.instagram.com/hakumeikoreisui?igsh=bTd5Z3V1MG5wNHhj&utm_source=qr',
+      imgSrcs: ['img/reisuigaku2.jpg', 'img/reisuigaku3.jpg', 'img/reisuigaku1.jpg']
+    },
+    {
+      id: 6,
+      title: 'めぐみや',
+      img: 'img/megumiya.jpg',
+      description: '手作り雑貨を販売します',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/megumiya.jpg']
+    },
+    {
+      id: 7,
+      title: 'はなみずき',
+      img: 'img/hanamizuki2.jpg',
+      description: '困っていることはありませんか？どうすれば良いのかお話を聞きながら一緒に悩み事を解決できるようお手伝いします。<br>料金20分¥2,000延長10分¥1,000',
+      link: 'https://www.instagram.com/mibyoshidan_yosshi/?igsh=dDVnNGR6bWhwcHRj',
+      imgSrcs: ['img/hanamizuki2.jpg', 'img/hanamizuki3.jpg', 'img/hanamizuki4.jpg', 'img/hanamizuki1.jpg']
+    },
+    {
+      id: 8,
+      title: 'Manacapua',
+      img: 'img/Manacapua2.jpg',
+      description: '魂の地図リーディング/インナーチャイルドセラピー<br>※魂の地図リーディング　20分2,000円<br>インナーチャイルドセラピー　3枚引20分2,000円、6枚引30分3,000円',
+      link: 'https://www.instagram.com/manacapua.kirara/?igsh=MW1lM2VuZzE4ZHNvYg%3D%3D',
+      imgSrcs: ['img/Manacapua2.jpg', 'img/manacapua.jpg']
+    },
+    {
+      id: 9,
+      title: 'ワイヤーアートと和雑貨の店 『和んなか』',
+      img: 'img/wannnaka2.jpg',
+      description: 'ワイヤーアートで製作したインテリア雑貨を中心に、生活を彩るアイテムをお届けします。<br>ワイヤーアート雑貨、水引細工のポチ袋・祝儀袋、ビーズアクセサリー',
+      link: 'https://www.instagram.com/wannaka_wireart_wazakka/?igsh=cHlla2RkcGV4MzZ0',
+      imgSrcs: ['img/wannnaka2.jpg', 'img/wannnaka1.jpg']
+    },
     {
       id: 10,
-      imgSrc: 'img/wannnaka.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'ワイヤーアートと和雑貨の店 『和んなか』',
-      description: 'ワイヤーアートで製作したインテリア雑貨を中心に、生活を彩るアイテムをお届けします。ワイヤーアート雑貨、水引細工のポチ袋・祝儀袋、ビーズアクセサリー',
-      link: 'https://www.instagram.com/wannaka_wireart_wazakka/?igsh=cHlla2RkcGV4MzZ0',
-      instaImgSrc: 'img/icon/another-logo.png'
+      title: 'たけのこ',
+      img: 'img/takenoco.jpg',
+      description: 'ポリマークレイ粘土を主に使った創作雑貨を販売します。',
+      link: 'https://www.instagram.com/takenoco_2000/?igsh=MTJ4NncyZXBscnUzbQ%3D%3D',
+      imgSrcs: ['img/takenoco.jpg', 'img/takenoko3.jpg']
     },
     {
       id: 11,
-      imgSrc: 'img/takenoco2.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'たけのこ',
-      description: 'プラスティック粘土で楽しい、ワクワク、かっこいいを追及しています！ポリマークレイを中心にハンドメイドアクセサリー、雑貨を販売♪',
-      link: 'https://www.instagram.com/takenoco_2000/?igsh=MTJ4NncyZXBscnUzbQ%3D%3D',
-      instaImgSrc: 'img/icon/another-logo.png'
+      title: '無痛庵',
+      img: 'img/mutsuan714.png',
+      description: '立ったまま整体体験や電磁波対策相談及びグッズの販売',
+      link: 'https://www.instagram.com/mutuuan_seitai/',
+      imgSrcs: ['img/mutsuan714.png']
     },
     {
       id: 12,
-      imgSrc: 'img/mutsuan714.png',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: '無痛庵',
-      description: '立ったまま整体体験や電磁波対策相談及びグッズの販売',
-      link: 'https://www.instagram.com/mutuuan_seitai/',
-      instaImgSrc: 'img/icon/another-logo.png'
+      title: 'aimin',
+      img: 'img/ai714.jpg',
+      description: '可愛いとほのぼのを、コンセプトに製作しています。是非、手に取って頂ければ嬉しいです♪handmadeピアスクラフトテープ雑貨販売',
+      link: 'https://www.instagram.com/aimin927/?igsh=ZnB4a2dxb2g5NXFl&utm_source=qr',
+      imgSrcs: ['img/ai714.jpg']
     },
     {
       id: 13,
-      imgSrc: 'img/ai714.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'aimin',
-      description: '可愛いとほのぼのを、コンセプトに製作しています。是非、手に取って頂ければ嬉しいです♪handmadeピアスクラフトテープ雑貨販売',
-      link: 'https://www.instagram.com/aimin927/?igsh=ZnB4a2dxb2g5NXFl&utm_source=qr',
-      instaImgSrc: 'img/icon/another-logo.png'
+      title: 'GUILT',
+      img: 'img/guilt2.jpg',
+      description: 'アストロダイス占い。蓮花作りのワークショップ',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/guilt2.jpg', 'img/guilt.jpg']
     },
     {
       id: 14,
-      imgSrc: 'img/guilt2.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'GUILT',
-      description: 'アストロダイス占い。蓮花作りのワークショップ',
-      link: '',
-      instaImgSrc: 'img/icon/another-logo.png'
+      title: 'かなつむり',
+      img: 'img/kanatumuri2.jpg',
+      description: 'がらずビーズを使った耳飾りやブローチの作品販売と、キックボクシングミット打ち体験<br>【自己紹介】耳飾り：個性的なのに挑戦しやすくて、ピアス穴がなくても楽しめて、他の人とちょっと差をつけられる。そんな耳飾りをお届けします。<br>ミット打ち体験：キックボクシングのトレーニングの1つ”ミット打ち”。それに特化したフィットネスで、実は流行ってきてます（笑）パチン☆ミと決まるとめちゃくちゃスッキリ!筋肉アクセサリー作家という異名を掲げて、あなたのキック受け止めます👍<br>手ぶらで参加できますので気になったらぜひチャレンジしてみて下さい。',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/kanatumuri2.jpg', 'img/kanatumuri.jpg']
     },
     {
       id: 15,
-      imgSrc: 'img/kanatumuri2.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'かなつむり',
-      description: 'がらずビーズを使った耳飾りやブローチの作品販売と、キックボクシングミット打ち体験【自己紹介】耳飾り：個性的なのに挑戦しやすくて、ピアス穴がなくても楽しめて、他の人とちょっと差をつけられる。そんな耳飾りをお届けします。ミット打ち体験：キックボクシングのトレーニングの1つ”ミット打ち”。それに特化したフィットネスで、実は流行ってきてます（笑）パチン☆ミと決まるとめちゃくちゃスッキリ!筋肉アクセサリー作家という異名を掲げて、あなたのキック受け止めます👍手ぶらで参加できますので気になったらぜひチャレンジしてみて下さい。',
-      link: '',
-      instaImgSrc: 'img/icon/another-logo.png'
+      title: 'Alba',
+      img: 'img/alba_July.png',
+      description: '日常にひとつ「新しい」を取り入れ、普段とは違う自分を過ごしてみませんか？変わらなくていい、そのままでいい。ただ「少し」昨日より新しいだけ♪',
+      link: 'https://www.instagram.com/alba_aviz/',
+      imgSrcs: ['img/alba-paint.png', 'img/alba-vr.png', 'img/alba_July.png']
     },
     {
       id: 16,
-      imgSrc: 'img/alba_July.png',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'Alba',
-      description: '日常にひとつ「新しい」を取り入れ、普段とは違う自分を過ごしてみませんか？変わらなくていい、そのままでいい。ただ「少し」昨日より新しいだけ♪',
-      link: '',
-      instaImgSrc: 'img/icon/another-logo.png'
+      title: '温熱療法【美温】',
+      img: 'img/terumi.jpg',
+      description: '温熱療法『イトオテルミー』療法とは：身体のぬくもりと刺激を与えることで自然治癒力に働きかけ、病態の改善、病気の予防、疲労回復、健康増進を図る温熱刺激療法です。',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/terumi.jpg']
     },
     {
       id: 17,
-      imgSrc: 'img/terumi.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: '温熱療法【美温】',
-      description: '温熱療法『イトオテルミー』療法とは：身体のぬくもりと刺激を与えることで自然治癒力に働きかけ、病態の改善、病気の予防、疲労回復、健康増進を図る温熱刺激療法です。',
-      link: '',
-      instaImgSrc: 'img/icon/another-logo.png'
+      title: '大和五條MARUSE',
+      img: 'img/yamatogojou2.jpg',
+      description: '(矢印)ジェラート&レモンスカッシュ',
+      link: 'https://www.instagram.com/marusegroup/',
+      imgSrcs: ['img/yamatogojou2.jpg', 'img/yamatogojou3.png', 'img/yamatogojou1.jpg']
     },
     {
       id: 18,
-      imgSrc: 'img/yamatogojou2',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: '大和五條MARUSE',
-      description: 'ジェラート&レモンスカッシュ',
-      link: '',
-      instaImgSrc: 'img/icon/another-logo.png'
-    },
-    {
-      id: 19,
-      imgSrc: 'img/colorfuls2',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: "colorful's  workshop",
-      description: 'スニーカーペイント（体験）',
+      title: "colorful's workshop",
+      img: 'img/colorfuls2.jpg',
+      description: 'スニーカーペイント（体験）<br>instagramアカウントの内容はまだ作成中です。また更新していきます。',
       link: 'https://www.instagram.com/colorfuls_workshop?igsh=cGk3ZGxrOGR4b3gw&utm_source=qr',
-      instaImgSrc: 'img/icon/another-logo.png'
+      imgSrcs: ['img/colorfuls2.jpg', 'img/colorfuls1.jpg']
     },
     {
       id: 10,
@@ -239,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // next ボタンを作成
         const nextButton = document.createElement('button');
         nextButton.classList.add('next');
-        nextButton.textContent = 'Next';
+        nextButton.textContent = 'その他の写真';
 
         wrapImgContainer.appendChild(prevButton);
         wrapImgContainer.appendChild(wrapImg);

@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/common_sp.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index_sp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  <script src="switch.js" defer></script>
     <script src="js/switch.js" defer></script>
     <script src="js/toggle.js" defer></script>
     <script src="js/gallery.js" defer></script>
@@ -75,17 +75,10 @@
     <!-- spヘッダー -->
     <article class="sp-header">
       <div class="bg-img"></div>
-      <!-- <div class="toggle">
-        <span class="material-symbols-outlined">
-        menu
-        </span>
-      </div>
+      <div class="logo"><img src="img/323marche_textlogo.png" alt=""></div>
       <div class="toggle">
-        <span class="material-symbols-outlined">
-        close
-        </span>
+          <img class="close" src="./img/icon/close_FILL0_wght400_GRAD0_opsz24.png" alt="">
       </div>
-      <div class="logo"><img src="img/323marche_textlogo.png" alt=""></div> -->
 
       <section class="sp-user">
         <p>ゲストさま</p>
@@ -117,7 +110,7 @@
           <li><a href="#gallery">ショップをみる</a></li>
           <li><a href="#notice">イベントをみる</a></li>
         </ul>
-        <h3>323 Infomation</h3>
+        <h2>323 Infomation</h2>
         <ul class="top-information">
           <li>コーディネート</li>
           <li>新着ショップ情報</li>
@@ -131,17 +124,19 @@
 
   <!-- HeaderHeroセクション -->
   <section class="sub-hero">
+    <div class="toggle">
+        <img class="menu" src="./img/icon/menu_FILL0_wght400_GRAD0_opsz24.png" alt="">
+    </div>
+
     <div class="hero-text">
       <h1 class="hero-message1" data-text="Futuristic marche">Futuristic marche</h1>
       <h2 class="hero-message2"   data-text="Living in the future">Living in the future</h2>
     </div>
   </section>
 
-  <!-- HEROセクションAbout -->
+  <!-- ABOUTセクション -->
   <section class="about">
-    <div class="about-text">
-      <h2 data-text="About Us">About Us</h2>
-    </div>
+      <h2 class="sec-title" data-text="About Us">About Us</h2>
     <div class="lead">
       <p>323マルシェ
         ゆるりと楽しみながら🎶わいわい出来たら良いなと♪<br>
@@ -149,7 +144,7 @@
         今はこんな感じで</p>
     </div>
     <div class="fade">
-      <div class="image"></div>
+      <div class="img"></div>
       <div class="image-text">
         <p>いつも楽しいことばかりじゃないが</p>
         <p>笑えるだけ笑っていたい（笑）</p>
@@ -157,11 +152,9 @@
     </div>
   </section>
 
-  <!-- HEROセクションNotice -->
+  <!-- NOTICEセクション -->
   <section class="notice" id="notice">
-    <div class="notice-text">
-      <h2 data-text="323お知らせ">ミニサン(323)からのお知らせ</h2>
-    </div>
+      <h2 class="sec-title" data-text="323お知らせ">ミニサン(323)からのお知らせ</h2>
     <div class="card-wrapper">
       <figure class="card fade">
         <video src="./img/video/summer_marche.mp4" autoplay muted loop></video>
@@ -175,7 +168,7 @@
         <video src="./img/video/summer_marche2.mp4" autoplay muted loop></video>
         <figcaption>2024/7/14(日)<br>
           この内容で『まいなぁが』さんに掲載していただきました。<br>
-          <a href="https://www.instagram.com/mynaga_iwade.kinokawa/">@mynaga_iwade.kinokawa</a>
+          <a class="instagram" href="https://www.instagram.com/mynaga_iwade.kinokawa/"><img src="./img/icon/instagram-logo-24.png" alt="">まいなぁが岩出・紀の川</a>
         </figcaption>
       </figure>
       <div class="image1"></div>
@@ -189,9 +182,7 @@
   
   <!-- Sliderセクション -->
   <section class="slider-section">
-    <div class="slider-text">
-      <h2>カテゴリー別Shops</h2>
-    </div>
+      <h2 class="sec-title">カテゴリー別Shops</h2>
 
     <section class="button-container">
       <button id="slider1-btn">323メニュー→</button>
@@ -242,9 +233,6 @@
           </div>
           <div class="slides scrollbar_hidden">
             <img src="img/heros/323marcheTop.png" alt="Slide 2">
-            <!-- <img src="img/wafuka.jpg" alt="Slide 1">
-            <img src="img/pomRubia.jpg" alt="Slide 2">
-            <img src="img/cocora.jpg" alt="Slide 3"> -->
           </div>
         </div>
       </section>
@@ -254,9 +242,7 @@
 
   <!-- ギャラリー             -->
   <section class="gallery" id="gallery">
-    <div class="gallery-text">
-      <h2>Open Shops</h2>
-    </div>
+      <h2 class="sec-title">Open Shops</h2>
     
     <section class="grid-container">
       
@@ -274,7 +260,7 @@
               
         <div class="card fade" data-id="2">
           <h2 class="card-title">ippo＆逸穂</h2>
-          <img src="img/ippo2.jpg" alt="">
+          <img src="img/ippo.jpg" alt="">
         </div>
         <div class="card fade" data-id="3">
           <h2 class="card-title">颯樹~soujyu~</h2>
@@ -297,47 +283,47 @@
           <h2 class="card-title">はなみずき</h2>
           <img src="img/hanamizuki1.jpg" alt="">
         </div>
-        <!-- <div class="card fade" data-id="8">
+        <div class="card fade" data-id="8">
           <h2 class="card-title">Manacapua</h2>
-          <img src="img/Manacapua2.jpg" alt="">
-        </div> -->
+          <img src="img/manacapua.jpg" alt="">
+        </div>
+        <div class="card fade" data-id="9">
+          <h2 class="card-title"><small>ワイヤーアートと和雑貨の店 </small><br>『和んなか』</h2>
+          <img src="img/wannnaka1.jpg" alt="">
+        </div>
         <div class="card fade" data-id="10">
-          <h2 class="card-title">ワイヤーアートと和雑貨の店 『和んなか』</h2>
-          <img src="img/wannnaka.jpg" alt="">
+          <h2 class="card-title">たけのこ</h2>
+          <img src="img/takenoko3.jpg" alt="">
         </div>
         <div class="card fade" data-id="11">
-          <h2 class="card-title">たけのこ</h2>
-          <img src="img/takenoco3.jpg" alt="">
-        </div>
-        <div class="card fade" data-id="12">
           <h2 class="card-title">無痛庵</h2>
           <img src="img/mutsuan714.png" alt="">
         </div>
-        <div class="card fade" data-id="13">
+        <div class="card fade" data-id="12">
           <h2 class="card-title">aimin</h2>
           <img src="img/ai714.jpg" alt="">
         </div>
-        <div class="card fade" data-id="14">
+        <div class="card fade" data-id="13">
           <h2 class="card-title">GUILT</h2>
           <img src="img/guilt.jpg" alt="">
         </div>
-        <div class="card fade" data-id="15">
+        <div class="card fade" data-id="14">
           <h2 class="card-title">かなつむり</h2>
           <img src="img/kanatumuri.jpg" alt="">
         </div>
-        <div class="card fade" data-id="16">
+        <div class="card fade" data-id="15">
           <h2 class="card-title">Alba</h2>
           <img src="./img/alba_July.png" alt="">
         </div>
-        <div class="card fade" data-id="17">
+        <div class="card fade" data-id="16">
           <h2 class="card-title">温熱療法【美温】</h2>
           <img src="img/terumi.jpg" alt="">
         </div>
-        <div class="card fade" data-id="18">
+        <div class="card fade" data-id="17">
           <h2 class="card-title">大和五條MARUSE</h2>
           <img src="img/yamatogojou1.jpg" alt="">
         </div>
-        <div class="card fade" data-id="19">
+        <div class="card fade" data-id="18">
           <h2 class="card-title">colorful's workshop</h2>
           <img src="img/colorfuls1.jpg" alt="">
         </div>
@@ -353,13 +339,11 @@
       <a href="323marche/shops.html">Shop一覧</a>
       <a href="https://www.instagram.com/323marche" target="blank" rel="noopener noreferrer">
         <p>323マルシェのSNS
-          <span class="material-symbols-outlined for">
-            arrow_forward_ios
-          </span>
+          <span class="material-symbols-outlined for"></span>
           <img src="img/icon/instagram-logo-24.png" alt="" class="instagram">
         </p>
       </a>
-      <a href="contact.html" class="contact"><p>お問合せ</p></a>
+      <a href="https://www.instagram.com/323marche/" target="blank" rel="noopener noreferrer" class="contact"><p>お問合せはinstagramのDMにて</p></a>
     </div>
     <div class="footer-logo">
       <a href="index.html"><img src="img/323Marchelogo.png" alt="" class="logo"></a>
