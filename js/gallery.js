@@ -1,66 +1,79 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // 複数のカードデータのリスト
+  const closeImgSrc = 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png';
+  const instaImgSrc = 'img/icon/instagram-logo-24.png';
+
   const cardDataList = [
-    {
-      id: 1,
-      imgSrc: 'img/wafuka.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'キッチン和福香',
-      description: '日替わり各種弁当700円　自家製米、無農薬野菜を使ったお弁当を販売♪',
-      link: 'https://www.instagram.com/wafuka0514/?igsh=bGNhN2Fxa2R1dXA2',
-      instaImgSrc: 'img/icon/instagram-logo-24.png'
-    },
-    {
+        // 複数イメージSumple
+    // {
+    //   id: 0,
+    //   title: '',
+    //   img: 'img/',
+    //   description: '',
+    //   link: 'https://www.instagram.com/wafuka0514/?igsh=bGNhN2Fxa2R1dXA2',
+    //   imgSrcs: ['img/', 'img/', 'img/']
+    // },
+
+      // 複数のカードデータのリスト
+        {
       id: 2,
-      imgSrc: 'img/ippo.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'ippo',
-      description: '暮らしの動線づくりをしながら癒しのグッズを販売！お掃除グッズ／ヒンメリ／藁書の販売。藁書体験（うちわ仕上げ）1,000円',
+      title: 'ippo＆逸穂',
+      img: 'img/ippo.jpg',
+      description: '妖精が宿るヒンメリと藁書の販売します。ヒンメリか藁書ワークショップ致します。<br>どちらかは当日のお楽しみに😊体験1,000円です。',
       link: 'https://www.instagram.com/ippo_7oco/?igsh=MWQ1a3liaWU4bmJwbA%3D%3D&utm_source=qr',
-      instaImgSrc: 'img/icon/another-logo.png'
+      imgSrcs: ['img/ippo2.jpg', 'img/ippo.jpg']
     },
+
+    // {
+    //   id: 2,
+    //   imgSrc: 'img/ippo.jpg',
+    //   closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
+    //   title: 'ippo',
+    //   description: '暮らしの動線づくりをしながら癒しのグッズを販売！お掃除グッズ／ヒンメリ／藁書の販売。藁書体験（うちわ仕上げ）1,000円',
+    //   link: 'https://www.instagram.com/ippo_7oco/?igsh=MWQ1a3liaWU4bmJwbA%3D%3D&utm_source=qr',
+    //   instaImgSrc: 'img/icon/another-logo.png'
+    // },
     {
       id: 3,
-      imgSrc: 'img/souju.jpg',
+      imgSrc: 'img/souju714.jpg',
       closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
       title: '颯樹~soujyu~',
-      description: '1点ものを心掛けています。みなさんにしあわせのお手伝いが出来ればと思い制作させていただいております。ハンドメイドアクセサリー、雑貨、天然石、ブリザーブドフラワー、陶芸、ステンドグラス。',
+      description: 'ハンドメイドアクセサリー、天然石、雑貨、プリザーブドフラワー、販売ワークショップ幸せのお手伝いが出来ますようにあなただけの1点を探してください',
       link: 'https://www.instagram.com/soujyu_3/?igsh=eXZlenFob2pub2Qz',
       instaImgSrc: 'img/icon/another-logo.png'
     },
     {
       id: 4,
-      imgSrc: 'img/Yroom.jpg',
+      imgSrc: 'img/cosmespace714.2.jpg',
       closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'Y.room',
-      description: '手織りでオリジナルのアクセサリー、マフラー、ターバン等々つくっています。',
-      link: 'https://www.instagram.com/yumirin1112/?igsh=MWF5cjA2dDNnampkbw%3D%3D',
+      title: 'コスメスペース',
+      description: 'これからの季節におすすめのスキンケアやコスメをご紹介♪お肌診断やポイントメイク、ハンドマッサージなど楽しいコーナーもございます!ミニサンプルプレゼント♪',
+      link: '',
       instaImgSrc: 'img/icon/another-logo.png'
     },
     {
       id: 5,
-      imgSrc: 'img/ruri.jpg',
+      imgSrc: 'img/reisuigaku2.jpg',
       closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: '藍染工房 瑠璃',
-      description: '工房では、藍染め体験を受け付けております。今回の出展内容は、本藍を使って工房で染めたショールや洋服などです。',
-      link: 'https://yoshikonatu.wixsite.com/ruri',
+      title: ' 令翠学鑑定士 白明光令翠(ﾚｲｽｲｶﾞｸｶﾝﾃｲｼ ﾊｸﾒｲｺｳﾚｲｽｲ)',
+      description: '令翠学ワンポイント鑑定　20分　2000円',
+      link: 'https://www.instagram.com/hakumeikoreisui?igsh=bTd5Z3V1MG5wNHhj&utm_source=qr',
       instaImgSrc: 'img/icon/another-logo.png'
     },
     {
       id: 6,
-      imgSrc: 'img/FPhirabayashi.jpg',
+      imgSrc: 'img/megumiya.jpg',
       closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'FP平林',
-      description: '金融機関でFP（ファイナンシャル・プランナー）という仕事をしています。お客様との接点づくりの一つでアンケートご回答の方に、名入れオリジナルキーホルダーを無料プレゼント！',
-      link: 'https://www.instagram.com/ippo_7oco/?igsh=MWQ1a3liaWU4bmJwbA%3D%3D&utm_source=qr',
+      title: 'めぐみや',
+      description: '手作り雑貨を販売します',
+      link: '',
       instaImgSrc: 'img/icon/another-logo.png'
     },
     {
       id: 7,
-      imgSrc: 'img/smile2.jpg',
+      imgSrc: 'img/hanamizuki1.jpg',
       closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'スマイルダイレクション',
-      description: '波動の器械を使って臓器の不調をお調べします！20分2,000円／45分4,000円',
+      title: 'はなみずき',
+      description: '困っていることはありませんか？どうすれば良いのかお話を聞きながら一緒に悩み事を解決できるようお手伝いします。料金20分¥2,000延長10分¥1,000',
       link: 'https://www.instagram.com/mibyoshidan_yosshi/?igsh=dDVnNGR6bWhwcHRj',
       instaImgSrc: 'img/icon/another-logo.png'
     },
@@ -75,12 +88,11 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       id: 9,
-      imgSrc: 'img/cosmespace2.jpg',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: 'コスメスペース',
-      description: 'リバースエイジング体験。お肌診断＆遺伝子コスメお試し!体験された方に遺伝子コスメのミニサンプルプレゼント！',
-      link: '',
-      instaImgSrc: 'img/icon/another-logo.png'
+      title: '',
+      img: 'img/',
+      description: '',
+      link: 'https://www.instagram.com/wafuka0514/?igsh=bGNhN2Fxa2R1dXA2',
+      imgSrcs: ['img/', 'img/', 'img/']
     },
     {
       id: 10,
@@ -102,25 +114,25 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       id: 12,
-      imgSrc: 'img/mutuan.png',
+      imgSrc: 'img/mutsuan714.png',
       closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
       title: '無痛庵',
-      description: '石の波動を利用して電磁波、ブルーライト対策や整体をしています♪立ったまま！その場で整体体験！家の電磁波対策相談や携帯電話等の電磁波対応グッズ等の販売。',
+      description: '立ったまま整体体験や電磁波対策相談及びグッズの販売',
       link: 'https://www.instagram.com/mutuuan_seitai/',
       instaImgSrc: 'img/icon/another-logo.png'
     },
     {
       id: 13,
-      imgSrc: 'img/ai.jpg',
+      imgSrc: 'img/ai714.jpg',
       closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
       title: 'aimin',
-      description: '可愛いをコンセプトに製作しています。是非、手に取って頂ければ嬉しいです♪ハンドメイドピアス・クラフトテープ小物販売',
+      description: '可愛いとほのぼのを、コンセプトに製作しています。是非、手に取って頂ければ嬉しいです♪handmadeピアスクラフトテープ雑貨販売',
       link: 'https://www.instagram.com/aimin927/?igsh=ZnB4a2dxb2g5NXFl&utm_source=qr',
       instaImgSrc: 'img/icon/another-logo.png'
     },
     {
       id: 14,
-      imgSrc: 'img/',
+      imgSrc: 'img/guilt2.jpg',
       closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
       title: 'GUILT',
       description: 'アストロダイス占い。蓮花作りのワークショップ',
@@ -155,6 +167,24 @@ document.addEventListener('DOMContentLoaded', function() {
       instaImgSrc: 'img/icon/another-logo.png'
     },
     {
+      id: 18,
+      imgSrc: 'img/yamatogojou2',
+      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
+      title: '大和五條MARUSE',
+      description: 'ジェラート&レモンスカッシュ',
+      link: '',
+      instaImgSrc: 'img/icon/another-logo.png'
+    },
+    {
+      id: 19,
+      imgSrc: 'img/colorfuls2',
+      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
+      title: "colorful's  workshop",
+      description: 'スニーカーペイント（体験）',
+      link: 'https://www.instagram.com/colorfuls_workshop?igsh=cGk3ZGxrOGR4b3gw&utm_source=qr',
+      instaImgSrc: 'img/icon/another-logo.png'
+    },
+    {
       id: 10,
       imgSrc: 'img/',
       closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
@@ -162,7 +192,9 @@ document.addEventListener('DOMContentLoaded', function() {
       description: '',
       link: '',
       instaImgSrc: 'img/icon/another-logo.png'
-    }
+    },
+
+
     // 他のカードデータもここに追加
   ];
 
@@ -189,11 +221,29 @@ document.addEventListener('DOMContentLoaded', function() {
         const cardOpenWrapper = document.createElement('div');
         cardOpenWrapper.classList.add('card-open-wrapper');
 
+        // wrap-img-container 要素を作成
+        const wrapImgContainer = document.createElement('div');
+        wrapImgContainer.classList.add('wrap-img-container');
+
+        // prev ボタンを作成
+        const prevButton = document.createElement('button');
+        prevButton.classList.add('prev');
+        prevButton.textContent = 'Previous';
+
         // wrap-img 要素を作成
         const wrapImg = document.createElement('img');
         wrapImg.classList.add('wrap-img');
-        wrapImg.src = cardData.imgSrc;
+        wrapImg.src = cardData.imgSrcs[0];
         wrapImg.alt = '';
+
+        // next ボタンを作成
+        const nextButton = document.createElement('button');
+        nextButton.classList.add('next');
+        nextButton.textContent = 'Next';
+
+        wrapImgContainer.appendChild(prevButton);
+        wrapImgContainer.appendChild(wrapImg);
+        wrapImgContainer.appendChild(nextButton);
 
         // card-open 要素を作成
         const cardOpen = document.createElement('div');
@@ -203,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const closeButton = document.createElement('button');
         closeButton.classList.add('close');
         const closeImg = document.createElement('img');
-        closeImg.src = cardData.closeImgSrc;
+        closeImg.src = closeImgSrc;
         closeImg.alt = '';
         closeButton.appendChild(closeImg);
         closeButton.addEventListener('click', function() {
@@ -216,7 +266,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // p 説明文を作成
         const descriptionElement = document.createElement('p');
-        descriptionElement.textContent = cardData.description;
+        // descriptionの改行を<br>に変更する
+        const descriptionText = cardData.description.replace(/\n/g, '<br>');
+        descriptionElement.innerHTML = descriptionText;
 
         // site ボタンを作成
         const siteButton = document.createElement('button');
@@ -227,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
         siteLink.rel = 'noreferrer noopener';
         const instaImg = document.createElement('img');
         instaImg.classList.add('insta');
-        instaImg.src = cardData.instaImgSrc;
+        instaImg.src = instaImgSrc;
         instaImg.alt = '';
         siteLink.appendChild(instaImg);
         const siteText = document.createElement('p');
@@ -242,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cardOpen.appendChild(siteButton);
 
         // card-open-wrapper に要素を追加
-        cardOpenWrapper.appendChild(wrapImg);
+        cardOpenWrapper.appendChild(wrapImgContainer);
         cardOpenWrapper.appendChild(cardOpen);
 
         // body に card-open-wrapper を追加
@@ -252,6 +304,23 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
           cardOpenWrapper.classList.add('active');
         }, 50); // 少し待ってから表示することでフェードイン効果を加える
+
+        // スライドショー機能の実装
+        let currentImageIndex = 0;
+
+        function updateImage() {
+          wrapImg.src = cardData.imgSrcs[currentImageIndex];
+        }
+
+        prevButton.addEventListener('click', function() {
+          currentImageIndex = (currentImageIndex - 1 + cardData.imgSrcs.length) % cardData.imgSrcs.length;
+          updateImage();
+        });
+
+        nextButton.addEventListener('click', function() {
+          currentImageIndex = (currentImageIndex + 1) % cardData.imgSrcs.length;
+          updateImage();
+        });
 
         // card-open-wrapper の外側をクリックしたときに閉じるイベントリスナーを追加
         document.addEventListener('click', outsideClickListener);
