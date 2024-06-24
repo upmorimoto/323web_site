@@ -54,6 +54,9 @@
 
 
 /* Galleryセクション */
+.gallery .various-gallery {
+  display: block;
+}
 .gallery .card {
   width: 40%;
   margin: 5% auto;

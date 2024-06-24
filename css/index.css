@@ -21,6 +21,7 @@
   padding: 5%;
   text-align: center;
 }
+
   /* ABOUTセクション */
 .about {
   width: 80%;
@@ -62,11 +63,6 @@
 .notice .instagram img {
   width: 20%;
 }
-
-
-
-
-
 .notice .image1 {
   position: absolute;
   width: 25%;
@@ -187,13 +183,6 @@
   width: 100%;
   padding-top: 5%;
 }
-.gallery-text {
-  font-size: 1.2rem;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
 
 .gallery .grid-container {
   width: 100%;
@@ -239,7 +228,7 @@
   position: relative;
 }
 .card-open-wrapper {
-  width: 80%;
+  width: 70%;
   height: auto;
   margin: 0 auto;
   display: flex;
@@ -266,7 +255,7 @@
   border: none;
 }
 .wrap-img-container {
-  width: 50%;
+  width: 40%;
   height: auto;
   display: block;
 }
@@ -277,7 +266,7 @@
 
 }
 .card-open {
-  width: 40%;
+  width: 50%;
   padding: 5%;
   display: flex;
   flex-direction: column;

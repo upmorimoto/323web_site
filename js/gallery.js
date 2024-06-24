@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
       id: 17,
       title: '大和五條MARUSE',
       img: 'img/yamatogojou2.jpg',
-      description: '(矢印)ジェラート&レモンスカッシュ',
+      description: 'ジェラート&レモンスカッシュ',
       link: 'https://www.instagram.com/marusegroup/',
       imgSrcs: ['img/yamatogojou2.jpg', 'img/yamatogojou3.png', 'img/yamatogojou1.jpg']
     },
@@ -151,13 +151,20 @@ document.addEventListener('DOMContentLoaded', function() {
       imgSrcs: ['img/colorfuls2.jpg', 'img/colorfuls1.jpg']
     },
     {
-      id: 10,
-      imgSrc: 'img/',
-      closeImgSrc: 'img/icon/close_FILL0_wght400_GRAD0_opsz24.png',
-      title: '',
-      description: '',
-      link: '',
-      instaImgSrc: 'img/icon/another-logo.png'
+      id: 19,
+      title: "プライベートサロンpour toi",
+      img: 'img/pour toi.jpg',
+      description: '無料ハンドケア、角質チェック<br>スキンケアトライアル販売(1000円〜2000円)',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/pour toi.jpg']
+    },
+    {
+      id: 20,
+      title: "倖",
+      img: 'img/koh.jpg',
+      description: 'ガラスと樹脂粘土を使用したアクセサリーや小物の販売<br>値段　500〜2000円',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/koh.jpg']
     },
 
 

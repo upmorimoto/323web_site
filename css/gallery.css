@@ -98,27 +98,3 @@
   opacity: 1;
 }
 
-
-
-/* Fade */
-.fade {
-	opacity: 0;
-	transform: translateY(50px);
-	transition: opacity 1.5s, transform 1s;
-}.fade.active {
-	opacity: 1;
-	transform: translateY(0px);
-}
-
-@media screen and (max-width: 720px) {
-
-  .gallery .various-gallery {
-    display: block;
-  }
-  .gallery .card {
-    width: 80%;
-    margin: 5% auto;
-  }
-  
-
-}
