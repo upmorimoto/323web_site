@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title: 'はなみずき',
       img: 'img/hanamizuki2.jpg',
       description: '困っていることはありませんか？どうすれば良いのかお話を聞きながら一緒に悩み事を解決できるようお手伝いします。<br>料金20分¥2,000延長10分¥1,000',
-      link: 'https://www.instagram.com/mibyoshidan_yosshi/?igsh=dDVnNGR6bWhwcHRj',
+      link: 'https://www.instagram.com/hanamizukifumiko/',
       imgSrcs: ['img/hanamizuki2.jpg', 'img/hanamizuki3.jpg', 'img/hanamizuki4.jpg', 'img/hanamizuki1.jpg']
     },
     {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
       id: 14,
       title: 'かなつむり',
       img: 'img/kanatumuri2.jpg',
-      description: 'がらずビーズを使った耳飾りやブローチの作品販売と、キックボクシングミット打ち体験<br>【自己紹介】耳飾り：個性的なのに挑戦しやすくて、ピアス穴がなくても楽しめて、他の人とちょっと差をつけられる。そんな耳飾りをお届けします。<br>ミット打ち体験：キックボクシングのトレーニングの1つ”ミット打ち”。それに特化したフィットネスで、実は流行ってきてます（笑）パチン☆ミと決まるとめちゃくちゃスッキリ!筋肉アクセサリー作家という異名を掲げて、あなたのキック受け止めます👍<br>手ぶらで参加できますので気になったらぜひチャレンジしてみて下さい。',
+      description: 'ｶﾞﾗｽﾋﾞｰｽﾞを使った耳飾りやﾌﾞﾛｰﾁの作品販売と、ｷｯｸﾎﾞｸｼﾝｸﾞﾐｯﾄ打ち体験<br>【自己紹介】耳飾り：個性的なのに挑戦しやすくて、ピアス穴がなくても楽しめて、他の人とちょっと差をつけられる。そんな耳飾りをお届けします。<br>ミット打ち体験：キックボクシングのトレーニングの1つ”ミット打ち”。それに特化したフィットネスで、実は流行ってきてます（笑）パチン☆ミと決まるとめちゃくちゃスッキリ!筋肉アクセサリー作家という異名を掲げて、あなたのキック受け止めます👍<br>手ぶらで参加できますので気になったらぜひチャレンジしてみて下さい。',
       link: 'https://www.instagram.com/',
       imgSrcs: ['img/kanatumuri2.jpg', 'img/kanatumuri.jpg']
     },
@@ -166,6 +166,22 @@ document.addEventListener('DOMContentLoaded', function() {
       link: 'https://www.instagram.com/',
       imgSrcs: ['img/koh.jpg']
     },
+    {
+      id: 21,
+      title: "moonbow",
+      img: 'img/moonbow.jpg',
+      description: '羊毛フェルトや手作り小物１００円〜',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/moonbow.jpg']
+    },
+    {
+      id: 22,
+      title: "紀の国カイロプラクティック",
+      img: 'img/kinokuni2.jpg',
+      description: '骨盤調整（1,000円、税込）<br>全身調整（2,000円、税込）<br>小顔調整（1,500円、税込）',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/kinokuni2.jpg', 'img/kinokuni3.jpg', 'img/kinokuni1.jpg']
+    },
 
 
     // 他のカードデータもここに追加
@@ -201,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // prev ボタンを作成
         const prevButton = document.createElement('button');
         prevButton.classList.add('prev');
-        prevButton.textContent = 'Previous';
+        prevButton.textContent = 'その他のお写真';
 
         // wrap-img 要素を作成
         const wrapImg = document.createElement('img');
@@ -212,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // next ボタンを作成
         const nextButton = document.createElement('button');
         nextButton.classList.add('next');
-        nextButton.textContent = 'その他の写真';
+        nextButton.textContent = '次の写真へ';
 
         wrapImgContainer.appendChild(prevButton);
         wrapImgContainer.appendChild(wrapImg);

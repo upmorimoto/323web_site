@@ -66,16 +66,19 @@
 }
 
 .card-open-wrapper {
-  height: fit-content;
+  width: 80%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  overflow-y: scroll;
+  max-height: 85vh;
 }
+
 .wrap-img-container {
   width: 80%;
   height: auto;
   display: block;
+  flex-shrink: 0; 
+  position: sticky;
 }
 .card-open h3 {
   font-size: 1.2rem;
@@ -87,6 +90,8 @@
 }
 .card-open {
   width: 100%;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 .card-open p {
   font-size: 1rem;
@@ -96,7 +101,7 @@
   top: 100%;
   right: 0;
   width: 10%;
-  height: 50%;
+  aspect-ratio: 1;
   z-index: 20;
   justify-content: end;
 }
