@@ -1,6 +1,10 @@
 
 @media screen and (max-width: 870px) {
 
+  /* セクション共通タイトル */
+  .sec-title {
+    font-size: 2rem;
+  }
 
   /* Aboutセクション */
   .about {

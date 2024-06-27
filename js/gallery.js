@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
       img: 'img/terumi.jpg',
       description: '温熱療法『イトオテルミー』療法とは：身体のぬくもりと刺激を与えることで自然治癒力に働きかけ、病態の改善、病気の予防、疲労回復、健康増進を図る温熱刺激療法です。',
       link: 'https://www.instagram.com/',
-      imgSrcs: ['img/terumi.jpg']
+      imgSrcs: ['img/terumi2.jpg', 'img/terumi.jpg']
     },
     {
       id: 17,
