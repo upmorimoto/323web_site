@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
       description: '手織りでオリジナルのアクセサリー、マフラー、ターバン等々つくっています。',
       link: 'https://www.instagram.com/',
       imgSrcs: ['img/Yroom2.jpg', 'img/Yroom3.jpg', 'img/Yroom.jpg']
-    },
+    }
 
 
     // 他のカードデータもここに追加
