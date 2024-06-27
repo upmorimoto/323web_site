@@ -182,6 +182,22 @@ document.addEventListener('DOMContentLoaded', function() {
       link: 'https://www.instagram.com/',
       imgSrcs: ['img/kinokuni2.jpg', 'img/kinokuni3.jpg', 'img/kinokuni1.jpg']
     },
+    {
+      id: 23,
+      title: "麗宝 -Reihow-",
+      img: 'img/reihow3.jpg',
+      description: '美と健康をメインテーマに理論に基づいた 驚きのアイテムをご紹介！<br>ぜひ ご自身の目で 確かめてみて下さい',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/reihow1.jpg', 'img/reihow2.jpg', 'img/reihow3.jpg']
+    },
+    {
+      id: 24,
+      title: "Y.room",
+      img: 'img/Yroom.jpg',
+      description: '手織りでオリジナルのアクセサリー、マフラー、ターバン等々つくっています。',
+      link: 'https://www.instagram.com/',
+      imgSrcs: ['img/Yroom2.jpg', 'img/Yroom3.jpg', 'img/Yroom.jpg']
+    },
 
 
     // 他のカードデータもここに追加
