@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
       id: 24,
       title: "Y.room",
       img: 'img/Yroom.jpg',
-      description: '手織りでオリジナルのアクセサリー、マフラー、ターバン等々つくっています。',
+      description: '手織りしながら、ブローチ、ターバン、マフラー等々作っています。<br>私しか織れない　色使い　オリジナルを　心がけて、織りの楽しさをお伝え出来ればと思っています',
       link: 'https://www.instagram.com/',
       imgSrcs: ['img/Yroom2.jpg', 'img/Yroom3.jpg', 'img/Yroom.jpg']
     }
