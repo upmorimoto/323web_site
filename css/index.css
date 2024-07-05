@@ -178,6 +178,44 @@
   font-size: 1.2rem;
 }
 
+/* Shop-listセクション */
+.shop-list {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list-card {
+  width: 25%;
+  line-height: 2.5;
+  color: var(--accentColor);
+  text-align: center;
+  font-size: 1.2rem;
+}
+.list-card:nth-child(odd) {
+  color: chocolate;
+}
+.list-card:nth-child(even) {
+  color: cadetblue;
+}
+
+
+.tapping {
+  width: fit-content;
+  display: flex;
+}
+
+.tap-img {
+  width: 10%;
+}
+
 
 /* Galleryセクション */
 .gallery {

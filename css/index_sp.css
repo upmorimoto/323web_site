@@ -55,6 +55,25 @@
   height: 40%;
 }
 
+/* Shop-listセクション */
+.list-card {
+  width: 100%;
+  line-height: 1.8;
+  color: var(--fontColor);
+  text-align: left;
+  font-size: 1rem;
+  padding: 2% 2% 2% 10%;
+}
+.list {
+  flex-direction: column;
+  flex-wrap:nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
 
 
 /* Galleryセクション */

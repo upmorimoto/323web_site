@@ -197,6 +197,14 @@ document.addEventListener('DOMContentLoaded', function() {
       description: '手織りしながら、ブローチ、ターバン、マフラー等々作っています。<br>私しか織れない　色使い　オリジナルを　心がけて、織りの楽しさをお伝え出来ればと思っています',
       link: 'https://www.instagram.com/',
       imgSrcs: ['img/Yroom2.jpg', 'img/Yroom3.jpg', 'img/Yroom.jpg']
+    },
+    {
+      id: 25,
+      title: "未病診断士よっしー",
+      img: 'img/mibyo.png',
+      description: '波動の器械を使って臓器の不調をお調べします！<br>20分2,000円／45分4,000円',
+      link: 'https://www.instagram.com/mibyoshindan_yossy/',
+      imgSrcs: ['img/mibyo.png']
     }
 
 
