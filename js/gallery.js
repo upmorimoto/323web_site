@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       id: 25,
-      title: "未病診断士よっしー",
+      title: "スマイルダイレクシヨン",
       img: 'img/mibyo.png',
       description: '波動の器械を使って臓器の不調をお調べします！<br>20分2,000円／45分4,000円',
       link: 'https://www.instagram.com/mibyoshindan_yossy/',
