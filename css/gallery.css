@@ -27,6 +27,7 @@
 .gallery .grid-container {
   width: 90%;
   margin: 0 auto;
+  background-image: url(../img/heros/back-flower.png);
 }
 .gallery .various-gallery {
   position: relative;
