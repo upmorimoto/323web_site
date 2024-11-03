@@ -36,10 +36,11 @@
     font-size: 0.9rem;
   }
   .notice .image1 {
-    width: 45%;
+    width: 50%;
   }
   .notice .image2 {
     width: 60%;
+    transform: rotate(345deg) translateY(200px) translateX(-50px);
   }
   .notice .instagram img {
     width: 20%;
